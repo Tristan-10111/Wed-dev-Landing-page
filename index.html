@@ -15,28 +15,28 @@
 <body>
   <!-- header section starts -->
   <header>
-    <!-- <div id="burger-menu" class="fas fa-bars"></div> -->
-
-    <a href="#" class="logo">Web Dev</a>
-
     <nav class="navbar">
-      <ul>
-        <li><a href="index.html" class="active">Home</li></a>
-        <li><a href="index.team">Team</li></a>
-        <li><a href="index.projetcs">Projects</li></a>
-        <li class="link"><a href="index.joinus">Join us</li></a>
-      </ul>
+      <div class="logo-name">Web Dev</div>
+      <i class="fa fa-bars" id="menu-btn"></i>
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html" class="active">Home</li></a>
+          <li><a href="team.html">Team</li></a>
+          <li><a href="projects.html">Projects</li></a>
+          <li><a href="join-us.html" id="Join_us">Join us</li></a>
+        </ul>
+      </div>
     </nav>
-
   </header>
   <!-- header section ends -->
+  <!-- home section start -->
+  <section class="home">
+    <h1 id="body" class="type">Web dev welcomes you.</h1>
+    <input type="button" value="Join us" id="btn">
+  </section>
+  <!-- home section ends -->
 
-  <!-- home content section -->
-  <div class="content">
-    <h1>Welcome</h1>
-    <input type="button" id="btn" value="Join us">
-  </div>
-  <!-- home content section ends -->
+  <script src="/script/script.js"></script>
 </body>
 
 </html>
