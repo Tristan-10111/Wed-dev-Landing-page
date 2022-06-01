@@ -8,7 +8,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: url(/images/IMG_8077.JPG) ;
+  background: url(/images/IMG_8078.JPG) ;
   width: 100%;
   height: auto;
   background-size: cover;
@@ -30,16 +30,17 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background:;
+  background:whitesmoke;
   color: black;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10000;
 }
 
 .logo-name{
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   text-transform: capitalize;
   margin: .5rem 1rem;
@@ -99,6 +100,12 @@ a:hover::after{
   display: flex;
   justify-content: space-around;
   margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+#Join_us:hover{
+  background: goldenrod;
+  color: white;
 }
 
 
@@ -125,12 +132,15 @@ a:hover::after{
   left: 50%;
   transform: translate(-65%, -50%);
   background: transparent;
-  color: white;
+  color: black;
   font-size: 1.5rem;
-  border: 2px solid goldenrod;
+  border: 2px solid white;
   padding: .8rem 2rem;
   margin-top: 1rem;
+}
 
+#btn:hover{
+  background: #8A7D00;
 
 }
 /* home header section ends */
@@ -142,7 +152,7 @@ a:hover::after{
     font-style: normal;
     font-weight: 400;
     font-size: 4rem;
-    color: black;
+    color: white;
     position: absolute;
     left: 50%;
     top: 10%;
@@ -218,12 +228,12 @@ a:hover::after{
 
   .nav-links.active{
     display: block;
+    z-index: 1000;
   }
 
   body{
-    background: url(/images/IMG_8077.JPG);
+    background: url(/images/IMG_8078.JPG);
     background-size: contain;
-    max-height: 80vh;
     background-repeat: no-repeat;
   }
 
@@ -240,6 +250,26 @@ a:hover::after{
 
 a:hover::after{
   width: 20%;
+}
+
+h1{
+   display: flex;
+   font-size: 1.6rem;
+   position: absolute;
+   top: -150px;
+   z-index: 1;
+}
+
+#btn{
+  position: absolute;
+  top: 250px;
+  left: 265px;
+  color: white;
+}
+
+#btn:hover{
+  background: #8A7D00;
+  color: white;
 }
 }
 
