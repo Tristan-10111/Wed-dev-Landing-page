@@ -148,7 +148,7 @@ a:hover::after{
 
 /* home content section start */
 
- h1 {
+ .h1 {
     font-family: 'Sansita';
     font-style: normal;
     font-weight: 400;
@@ -156,8 +156,33 @@ a:hover::after{
     color: white;
     position: absolute;
     left: 50%;
-    top: 10%;
-    transform: translate(-50%, -10%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.h1 path :nth-child(){
+
+}
+.h1 path :nth-child(){
+
+}
+.h1 path :nth-child(){
+
+}
+.h1 path :nth-child(){
+
+}
+.h1 path :nth-child(){
+
+}
+.h1 path :nth-child(){
+
+}
+.h1 path :nth-child(){
+
+}
+.h1 path :nth-child(){
+
 }
 /*
 .type {
