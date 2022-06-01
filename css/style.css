@@ -8,7 +8,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: url(/images/IMG_8078.JPG) ;
+  background: url(/images/Web\ Dev\ official\ background.jpg) ;
   width: 100%;
   height: auto;
   background-size: cover;
@@ -132,7 +132,7 @@ a:hover::after{
   left: 50%;
   transform: translate(-65%, -50%);
   background: transparent;
-  color: black;
+  color: white;
   font-size: 1.5rem;
   border: 2px solid white;
   padding: .8rem 2rem;
@@ -141,6 +141,7 @@ a:hover::after{
 
 #btn:hover{
   background: #8A7D00;
+  color: white;
 
 }
 /* home header section ends */
@@ -232,7 +233,7 @@ a:hover::after{
   }
 
   body{
-    background: url(/images/IMG_8078.JPG);
+    background: url(/images/Web\ Dev\ official\ background.jpg);
     background-size: contain;
     background-repeat: no-repeat;
   }
