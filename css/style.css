@@ -7,8 +7,8 @@
 
 body{
   margin: 0;
-  padding: 0;
-  background: url(/images/Web\ Dev\ official\ background.jpg) ;
+  padding: 10px;
+  background-image: linear-gradient(rgb(0,0,0,0.6), transparent), url(/images/IMG_8078.JPG);
   width: 100%;
   height: auto;
   background-size: cover;
@@ -16,15 +16,7 @@ body{
   min-height: 100vh;
 }
 
-/* web dev text */
-#body{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:transparent;
-}
-/* web dev text end */
+
 
 .navbar{
   display: flex;
@@ -93,15 +85,18 @@ a:hover::after{
 
 #Join_us{
   border: 2px solid goldenrod;
-  padding: 1.5rem 1rem;
+  padding: .8rem 1rem;
   display: block;
   font-size: 1.5rem;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 3px;
+  margin-top: 10px;
+  position: relative;
 }
 #Join_us:hover{
   background: goldenrod;
@@ -140,7 +135,7 @@ a:hover::after{
 }
 
 #btn:hover{
-  background: #8A7D00;
+  background: goldenrod;
   color: white;
 
 }
@@ -148,82 +143,30 @@ a:hover::after{
 
 /* home content section start */
 
- .h1 {
+ #h1 {
     font-family: 'Sansita';
     font-style: normal;
     font-weight: 400;
     font-size: 4rem;
-    color: white;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    background: url(/text\ background.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
     position: absolute;
-    left: 50%;
+    left: 50%; 
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.h1 path :nth-child(){
-
-}
-.h1 path :nth-child(){
-
-}
-.h1 path :nth-child(){
-
-}
-.h1 path :nth-child(){
-
-}
-.h1 path :nth-child(){
-
-}
-.h1 path :nth-child(){
-
-}
-.h1 path :nth-child(){
-
-}
-.h1 path :nth-child(){
-
-}
-/*
-.type {
-    position: relative;
-    top: -8rem;
-    color: white;
-    -webkit-text-stroke: orange;
-    margin-left: 50%;
-    transform: translate(-50%);
-    
+@keyframes back{
+  100%{
+    background-position: 2000px 0;
+  }
 }
 
-.type::before{
-  opacity: 0.1;
-  color: transparent;
-  
-}
-
-.type::after {
-    content: '!';
-    position: absolute;
-    right: 0;
-    color: white;
-    background: gray;
-    width: 105%;
-    margin-right: -10px;
-    animation: animate 5s steps(28) linear infinite;
-}
-@keyframes animate {
-    to {
-        width: 0%;
-    }
-}
-
-@keyframes line {
-    50% {
-        color: transparent;
-    }
-} 
 /* home content section ends */
-
 /* header media */
 @media (max-width: 500px){
   #menu-btn{
@@ -258,7 +201,7 @@ a:hover::after{
   }
 
   body{
-    background: url(/images/Web\ Dev\ official\ background.jpg);
+   background-image: linear-gradient(rgba(0,0,0,0.4), transparent), url(/images/IMG_8078.JPG);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -278,11 +221,11 @@ a:hover::after{
   width: 20%;
 }
 
-h1{
+#h1{
    display: flex;
    font-size: 1.6rem;
    position: absolute;
-   top: -150px;
+   top: 180px;
    z-index: 1;
 }
 
@@ -291,6 +234,8 @@ h1{
   top: 250px;
   left: 265px;
   color: white;
+  width: 150px;
+  font-size: 1.2rem;
 }
 
 #btn:hover{
